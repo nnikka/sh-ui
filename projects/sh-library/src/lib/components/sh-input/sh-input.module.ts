@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
-import { ShLibraryComponent } from './sh-library.component';
+import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 
 
 
 @NgModule({
   declarations: [
-    ShLibraryComponent,
     InputComponent
   ],
   imports: [
-  ],
-  exports: [
-    ShLibraryComponent
+    CommonModule
   ]
 })
-export class ShLibraryModule { }
+export class ShInputModule { }

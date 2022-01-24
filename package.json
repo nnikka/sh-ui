@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "pack_sh-library": "cd dist/sh-library && npm pack"
+    "pack": "cd dist/sh-library && npm pack"
   },
   "private": true,
   "dependencies": {

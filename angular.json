@@ -8,6 +8,11 @@
       "root": "projects/sh-library",
       "sourceRoot": "projects/sh-library/src",
       "prefix": "sh",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

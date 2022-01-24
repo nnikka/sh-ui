@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "sh-library": {
+      "projectType": "library",
+      "root": "projects/sh-library",
+      "sourceRoot": "projects/sh-library/src",
+      "prefix": "sh",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sh-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sh-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sh-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sh-library/src/test.ts",
+            "tsConfig": "projects/sh-library/tsconfig.spec.json",
+            "karmaConfig": "projects/sh-library/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "sh-library"
 }

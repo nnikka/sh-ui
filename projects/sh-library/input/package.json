@@ -3,5 +3,8 @@
     "lib": {
       "entryFile": "src/public_api.ts"
     }
+  },
+  "peerDependencies": {
+    "@angular/forms": "^13.1.0"
   }
 }
